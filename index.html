@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>Interactive pricing component</title>
+</head>
+
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <main>
+    <section id="first_section">
+      <div class="slider_div">
+        <h3 class="views"><span id="views_id">100K</span> PAGEVIEWS</h3>
+        <input type="range" name="slider" class="slider_input" id="slider_id" min="0" max="4" value="2">
+        <div id="price_div">
+          <div id="dollar">$</div>
+          <div id="price"><span id="price_id">16</span>.00</div>
+          <div id="time">/ month</div>
+        </div>
+      </div>
+    </section>
+    <section id="second_section">
+      <p>Monthly Billing</p>
+      <label id="btn">
+        <input type="checkbox" name="billing" id="billing_id">
+        <span class="mini_sircle"></span>
+      </label>
+      <p>Yearly Billing</p>
+      <div class="percent_div">-25%<span>discount</span></div>
+    </section>
+    <div class="line"></div>
+    <section id="third_section">
+      <ul>
+        <li>
+          <div class="check_div"></div>Unlimited websites
+        </li>
+        <li>
+          <div class="check_div"></div>100% data ownership
+        </li>
+        <li>
+          <div class="check_div"></div>Email reports
+        </li>
+      </ul>
+      <button class="last_btn">Start my trial</button>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
